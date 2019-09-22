@@ -1,5 +1,5 @@
 {
-  "name": "RNFirebaseStarter",
+  "name": "lucusapp",
   "version": "5.4.0",
   "private": true,
   "scripts": {
@@ -14,9 +14,11 @@
     "postinstall": "npx jetify"
   },
   "dependencies": {
+    "@estimote/react-native-proximity": "^0.6.0",
     "jetifier": "^1.6.4",
     "react": "16.8.6",
     "react-native": "0.60.5",
+    "react-native-fbsdk": "^1.0.3",
     "react-native-firebase": "^5.5.6"
   },
   "devDependencies": {

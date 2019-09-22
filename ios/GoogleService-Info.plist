@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>700871009070-f5df5p5et57d6u09ttbu1pbtfko63ei3.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.700871009070-f5df5p5et57d6u09ttbu1pbtfko63ei3</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDWzJZR7gGVxgKulQRVuSfkp_4XIT7rajk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>700871009070</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.invertase.lucusapp</string>
+	<key>PROJECT_ID</key>
+	<string>tasketball-e9dc5</string>
+	<key>STORAGE_BUCKET</key>
+	<string>tasketball-e9dc5.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:700871009070:ios:8b0952986b27fb1ae450bf</string>
+	<key>DATABASE_URL</key>
+	<string>https://tasketball-e9dc5.firebaseio.com</string>
+</dict>
+</plist>

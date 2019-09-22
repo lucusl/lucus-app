@@ -763,6 +763,11 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
+"@estimote/react-native-proximity@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@estimote/react-native-proximity/-/react-native-proximity-0.6.0.tgz#9f2704cfc975dd59d3105c346e5f80c401279d4e"
+  integrity sha512-q3yrk6Cg/zHX0p7WrCYTbditgFl7DP7tjtzRItTYONeiVO4FRivMnLIX+Ulo3cMLCAgNSaNy4rr9XX1Cu3nkQQ==
+
 "@hapi/address@2.x.x":
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/@hapi/address/-/address-2.1.1.tgz#61395b5ed94c4cb19c2dc4c85969cff3d40d583f"
@@ -5386,6 +5391,11 @@ react-is@^16.8.6:
   version "16.9.0"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.9.0.tgz#21ca9561399aad0ff1a7701c01683e8ca981edcb"
   integrity sha512-tJBzzzIgnnRfEm046qRcURvwQnZVXmuCbscxUO5RWrGTXpon2d4c8mI0D8WE6ydVIm29JiLB6+RslkIvym9Rjw==
+
+react-native-fbsdk@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/react-native-fbsdk/-/react-native-fbsdk-1.0.3.tgz#e52b4dad9c14728e6c43dc1a4f44e25bbfce0a01"
+  integrity sha512-4tnL8ncqKgtrlz7l8P4+3czuKmExGO5l1RbypOIRbPp2vNT6AbKsZExrn0kUcJDP3fsuF1ODnkKUNN7RYNHhLg==
 
 react-native-firebase@^5.5.6:
   version "5.5.6"

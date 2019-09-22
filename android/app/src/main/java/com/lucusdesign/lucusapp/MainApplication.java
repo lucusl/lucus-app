@@ -1,4 +1,4 @@
-package com.invertase.rnfirebasestarter;
+package com.lucusdesign.lucusapp;
 
 import androidx.multidex.MultiDexApplication;
 

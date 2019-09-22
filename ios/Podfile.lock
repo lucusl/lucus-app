@@ -9,7 +9,27 @@ PODS:
   - Crashlytics (3.14.0):
     - Fabric (~> 1.10.2)
   - DoubleConversion (1.1.6)
+  - estimote-react-native-proximity (0.6.0):
+    - EstimoteProximitySDK (~> 1.0)
+    - React
+  - EstimoteBluetoothScanning (1.0.5)
+  - EstimoteProximitySDK (1.4.1):
+    - EstimoteBluetoothScanning (>= 0.2)
   - Fabric (1.10.2)
+  - FBSDKCoreKit (5.6.0):
+    - FBSDKCoreKit/Basics (= 5.6.0)
+    - FBSDKCoreKit/Core (= 5.6.0)
+  - FBSDKCoreKit/Basics (5.6.0)
+  - FBSDKCoreKit/Core (5.6.0):
+    - FBSDKCoreKit/Basics
+  - FBSDKLoginKit (5.6.0):
+    - FBSDKLoginKit/Login (= 5.6.0)
+  - FBSDKLoginKit/Login (5.6.0):
+    - FBSDKCoreKit (~> 5.0)
+  - FBSDKShareKit (5.6.0):
+    - FBSDKShareKit/Share (= 5.6.0)
+  - FBSDKShareKit/Share (5.6.0):
+    - FBSDKCoreKit (~> 5.0)
   - Firebase/Auth (6.8.1):
     - Firebase/CoreOnly
     - FirebaseAuth (~> 6.2.3)
@@ -249,6 +269,20 @@ PODS:
     - React-cxxreact (= 0.60.5)
     - React-jsi (= 0.60.5)
   - React-jsinspector (0.60.5)
+  - react-native-fbsdk (1.0.3):
+    - React
+    - react-native-fbsdk/Core (= 1.0.3)
+    - react-native-fbsdk/Login (= 1.0.3)
+    - react-native-fbsdk/Share (= 1.0.3)
+  - react-native-fbsdk/Core (1.0.3):
+    - FBSDKCoreKit (~> 5.0)
+    - React
+  - react-native-fbsdk/Login (1.0.3):
+    - FBSDKLoginKit (~> 5.0)
+    - React
+  - react-native-fbsdk/Share (1.0.3):
+    - FBSDKShareKit (~> 5.0)
+    - React
   - React-RCTActionSheet (0.60.5):
     - React-Core (= 0.60.5)
   - React-RCTAnimation (0.60.5):
@@ -286,6 +320,7 @@ PODS:
 DEPENDENCIES:
   - Crashlytics (~> 3.14.0)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
+  - "estimote-react-native-proximity (from `../node_modules/@estimote/react-native-proximity`)"
   - Fabric (~> 1.10.2)
   - Firebase/Auth (~> 6.8.1)
   - Firebase/Core (~> 6.8.1)
@@ -306,6 +341,7 @@ DEPENDENCIES:
   - React-jsi (from `../node_modules/react-native/ReactCommon/jsi`)
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
+  - react-native-fbsdk (from `../node_modules/react-native-fbsdk`)
   - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
   - React-RCTAnimation (from `../node_modules/react-native/Libraries/NativeAnimation`)
   - React-RCTBlob (from `../node_modules/react-native/Libraries/Blob`)
@@ -324,7 +360,12 @@ SPEC REPOS:
     - boost-for-react-native
     - BoringSSL-GRPC
     - Crashlytics
+    - EstimoteBluetoothScanning
+    - EstimoteProximitySDK
     - Fabric
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+    - FBSDKShareKit
     - Firebase
     - FirebaseABTesting
     - FirebaseAnalytics
@@ -358,6 +399,8 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   DoubleConversion:
     :podspec: "../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec"
+  estimote-react-native-proximity:
+    :path: "../node_modules/@estimote/react-native-proximity"
   Folly:
     :podspec: "../node_modules/react-native/third-party-podspecs/Folly.podspec"
   glog:
@@ -376,6 +419,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/jsiexecutor"
   React-jsinspector:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
+  react-native-fbsdk:
+    :path: "../node_modules/react-native-fbsdk"
   React-RCTActionSheet:
     :path: "../node_modules/react-native/Libraries/ActionSheetIOS"
   React-RCTAnimation:
@@ -406,7 +451,13 @@ SPEC CHECKSUMS:
   BoringSSL-GRPC: db8764df3204ccea016e1c8dd15d9a9ad63ff318
   Crashlytics: 540b7e5f5da5a042647227a5e3ac51d85eed06df
   DoubleConversion: 5805e889d232975c086db112ece9ed034df7a0b2
+  estimote-react-native-proximity: bba65e276c1a16dcb2c24e7b6214a284c172610e
+  EstimoteBluetoothScanning: 8aae20369d7d9008deb8429b9c83c11e948bd7be
+  EstimoteProximitySDK: ff97b13e674ebe82ceaf0cd46a29422211c52d85
   Fabric: 706c8b8098fff96c33c0db69cbf81f9c551d0d74
+  FBSDKCoreKit: d6655a343868d4bb5c29a60859bab07c3be14a0b
+  FBSDKLoginKit: c5a623de88a6b0cda35b35582921f6cec2efcc36
+  FBSDKShareKit: 0d8c4cfd5c1f185d5f9c26d79758b141086e1251
   Firebase: 9cbe4e5b5eaafa05dc932be58b7c8c3820d71e88
   FirebaseABTesting: 662e8de812ceb5d57ad66381f6402f4d28dc5c91
   FirebaseAnalytics: 843c7f64a8f9c79f0d03281197ebe7bb1d58d477
@@ -445,6 +496,7 @@ SPEC CHECKSUMS:
   React-jsi: 4d8c9efb6312a9725b18d6fc818ffc103f60fec2
   React-jsiexecutor: 90ad2f9db09513fc763bc757fdc3c4ff8bde2a30
   React-jsinspector: e08662d1bf5b129a3d556eb9ea343a3f40353ae4
+  react-native-fbsdk: 7bde3b84fc093d2c5e7fdccea03fe8fa9f112834
   React-RCTActionSheet: b0f1ea83f4bf75fb966eae9bfc47b78c8d3efd90
   React-RCTAnimation: 359ba1b5690b1e87cc173558a78e82d35919333e
   React-RCTBlob: 5e2b55f76e9a1c7ae52b826923502ddc3238df24
@@ -458,6 +510,6 @@ SPEC CHECKSUMS:
   RNFirebase: ac0de8b24c6f91ae9459575491ed6a77327619c6
   yoga: 312528f5bbbba37b4dcea5ef00e8b4033fdd9411
 
-PODFILE CHECKSUM: 12ed60d945a80fb42e8241d7a11d158947e145b1
+PODFILE CHECKSUM: c4920a995535cd7d0055fea5953d1db5dedc1338
 
 COCOAPODS: 1.7.5
